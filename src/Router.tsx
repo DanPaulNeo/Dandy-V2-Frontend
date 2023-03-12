@@ -1,13 +1,17 @@
 import React from "react";
 import InitializeRoutes from "./Helpers/Routes/InitializeRoutes";
 import Layout from "./Components/Layouts";
+import { Provider } from "react-redux";
+import store from "./State/store";
 
 function App() {
   return (
     <>
-      <Layout>
-        <InitializeRoutes />
-      </Layout>
+      <Provider store={store}>
+        <Layout>
+          <InitializeRoutes />
+        </Layout>
+      </Provider>
     </>
   );
 }
