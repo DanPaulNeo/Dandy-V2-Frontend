@@ -1,10 +1,13 @@
 import React from "react";
-import InitializeRoutes from "./Helpers/Routes/InitialiseRoutes";
+import InitializeRoutes from "./Helpers/Routes/InitializeRoutes";
+import Layout from "./Components/Layouts";
 
 function App() {
   return (
     <>
-      <InitializeRoutes />
+      <Layout>
+        <InitializeRoutes />
+      </Layout>
     </>
   );
 }
